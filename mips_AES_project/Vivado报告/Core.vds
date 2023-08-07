@@ -1,0 +1,261 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Jun 17 20:41:37 2022
+# Process ID: 1488
+# Current directory: D:/vivado_project/mips_32/mips_32.runs/synth_1
+# Command line: vivado.exe -log Core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Core.tcl
+# Log file: D:/vivado_project/mips_32/mips_32.runs/synth_1/Core.vds
+# Journal file: D:/vivado_project/mips_32/mips_32.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Core.tcl -notrace
+Command: synth_design -top Core -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14912
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Core' [C:/Users/Administrator/Desktop/mips_32_project/Core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_core' [C:/Users/Administrator/Desktop/mips_32_project/IF_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_icache' [C:/Users/Administrator/Desktop/mips_32_project/IF_icache.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_icache' (1#1) [C:/Users/Administrator/Desktop/mips_32_project/IF_icache.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_core' (2#1) [C:/Users/Administrator/Desktop/mips_32_project/IF_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_forward' [C:/Users/Administrator/Desktop/mips_32_project/IF_forward.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'IF_forward' (3#1) [C:/Users/Administrator/Desktop/mips_32_project/IF_forward.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ID_core' [C:/Users/Administrator/Desktop/mips_32_project/ID_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_control' [C:/Users/Administrator/Desktop/mips_32_project/ID_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_control' (4#1) [C:/Users/Administrator/Desktop/mips_32_project/ID_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_regFile' [C:/Users/Administrator/Desktop/mips_32_project/ID_regFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_regFile' (5#1) [C:/Users/Administrator/Desktop/mips_32_project/ID_regFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_core' (6#1) [C:/Users/Administrator/Desktop/mips_32_project/ID_core.v:1]
+WARNING: [Synth 8-7071] port 'in_forward_data' of module 'ID_core' is unconnected for instance 'ID_core_test' [C:/Users/Administrator/Desktop/mips_32_project/Core.v:138]
+WARNING: [Synth 8-7023] instance 'ID_core_test' of module 'ID_core' has 38 connections declared, but only 37 given [C:/Users/Administrator/Desktop/mips_32_project/Core.v:138]
+INFO: [Synth 8-6157] synthesizing module 'ID_hazard' [C:/Users/Administrator/Desktop/mips_32_project/ID_hazard.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ID_hazard' (7#1) [C:/Users/Administrator/Desktop/mips_32_project/ID_hazard.v:2]
+INFO: [Synth 8-6157] synthesizing module 'EX_core' [C:/Users/Administrator/Desktop/mips_32_project/EX_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_alu' [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_alu' (8#1) [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EX_core' (9#1) [C:/Users/Administrator/Desktop/mips_32_project/EX_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_forward' [C:/Users/Administrator/Desktop/mips_32_project/EX_forward.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EX_forward' (10#1) [C:/Users/Administrator/Desktop/mips_32_project/EX_forward.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MEM_core' [C:/Users/Administrator/Desktop/mips_32_project/MEM_core.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_dcache' [C:/Users/Administrator/Desktop/mips_32_project/MEM_dcache.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_dcache' (11#1) [C:/Users/Administrator/Desktop/mips_32_project/MEM_dcache.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_core' (12#1) [C:/Users/Administrator/Desktop/mips_32_project/MEM_core.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (13#1) [C:/Users/Administrator/Desktop/mips_32_project/Core.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'zero_ext_imm_reg' [C:/Users/Administrator/Desktop/mips_32_project/ID_core.v:120]
+WARNING: [Synth 8-327] inferring latch for variable 'out_ctrl_RegWr_reg' [C:/Users/Administrator/Desktop/mips_32_project/ID_core.v:178]
+WARNING: [Synth 8-327] inferring latch for variable 'out_ctrl_MemWr_reg' [C:/Users/Administrator/Desktop/mips_32_project/ID_core.v:180]
+WARNING: [Synth 8-327] inferring latch for variable 'comp_result_reg' [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_result_reg' [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'logic_result_reg' [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'arith_result_reg' [C:/Users/Administrator/Desktop/mips_32_project/EX_alu.v:14]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 569   
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 16    
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 2     
+	  14 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 421   
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:34 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:38 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:47 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:56 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:56 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:02:00 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:02:01 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:02:01 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:02:01 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    74|
+|3     |LUT1   |    36|
+|4     |LUT2   |   146|
+|5     |LUT3   |   195|
+|6     |LUT4   |   240|
+|7     |LUT5   |   290|
+|8     |LUT6   |  4557|
+|9     |MUXF7  |  1939|
+|10    |MUXF8  |   920|
+|11    |FDCE   |   612|
+|12    |FDRE   | 12232|
+|13    |FDSE   |  1142|
+|14    |LD     |   115|
+|15    |IBUF   |     2|
+|16    |OBUF   |   256|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------+------+
+|      |Instance         |Module     |Cells |
++------+-----------------+-----------+------+
+|1     |top              |           | 22760|
+|2     |  EX_core_test   |EX_core    |   683|
+|3     |    alu_test     |EX_alu     |   672|
+|4     |  ID_core_test   |ID_core    |  2063|
+|5     |    regFile_test |ID_regFile |  2015|
+|6     |  IF_core_test   |IF_core    |   226|
+|7     |    icache_test  |IF_icache  |   226|
+|8     |  MEM_core_test  |MEM_core   | 18582|
+|9     |    dcahce_test  |MEM_dcache | 18582|
++------+-----------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:02:04 . Memory (MB): peak = 1456.914 ; gain = 648.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:02:05 . Memory (MB): peak = 1456.914 ; gain = 648.641
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:02:05 . Memory (MB): peak = 1456.914 ; gain = 648.641
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 1456.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3048 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'Core' is not ideal for floorplanning, since the cellview 'MEM_dcache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1456.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 115 instances were transformed.
+  LD => LDCE: 115 instances
+
+Synth Design complete, checksum: f5810179
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:02:22 . Memory (MB): peak = 1456.914 ; gain = 673.496
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_project/mips_32/mips_32.runs/synth_1/Core.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Core_utilization_synth.rpt -pb Core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 17 20:44:17 2022...
